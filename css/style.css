@@ -141,7 +141,7 @@ p {
 
 /* <<< Alexander Kirichenko code (contact.html page and info.html page >>> */
 
-.placeholder-square {
+.placeholder-square { /* Images prototypes
     width: 120px;
     height: 120px;
     background-color: rgba(255,255,255,0.4);
@@ -183,4 +183,5 @@ p {
 @media (min-width: 1200px) {
     html { font-size: 120%; }
 }
+
 
