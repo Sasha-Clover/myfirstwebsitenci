@@ -16,7 +16,7 @@
 
 /* navbar start */
 .navbar{
-  background-color: #111;
+  background-color: #040968;
   /* data-bs-theme="dark" */
   text-align: center;
   margin-bottom: 0.8em;
@@ -34,7 +34,7 @@
 }
 
 .navBtn:hover {
-  background-color: #111;
+  background-color: white;
 }
 
 ul {
