@@ -1,4 +1,4 @@
-<!-- index.html || by Andrei G -->
+<!-- news.html || by Andrei G -->
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -13,30 +13,11 @@
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
 		<title>Sustainability</title>
-		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="style/css/style.css">
 	</head>
 	<body>
 		<!-- navbar -->
-		<!-- We must change "navbar" to "myNavbar" and delete "bg-dark" if we want to use our color instead standart boostrap -->
-		<nav class="navbar fixe-top navbar-expand-lg myNavbar" data-bs-theme="dark"> 
-			<div class="container-fluid">
-				<a class="navbar-brand"  href="index.html">Group G</a>
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-
-				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-					<a class="nav-link active navBtn" aria-current="page" href="index.html">Home</a>
-					<a class="nav-link navBtn"  href="news.html">News</a>
-					<a class="nav-link navBtn"  href="uisceire.html">UisceIRE</a>
-					<a class="nav-link navBtn"  href="sources.html">Sources</a>
-					<a class="nav-link navBtn"  href="conserv.html">Conservation</a>
-					<a class="nav-link navBtn"  href="findus.html">Find Us</a>
-					<a class="nav-link navBtn"  href="contact.html">Contact Us</a>
-					<a class="nav-link navBtn"  href="info.html">Info</a>
-				</div>
-			</div>
-		</nav>
+	    <script src="scripts/nav.js"></script>
 
 		<!-- javascript -->
 		<script>
@@ -120,60 +101,12 @@
 					<p>text around the form here</p>
 				</div>
 			</div>
-
-			<!-- row -->
-			<div class="row ag_row justify-content-sm-center">
-				<div class="col-sm-12 ag_col">
-					<p>r6 c1</p>
-					<p>footer pg2</p>
-				</div>
-			</div>
 		</div>
-		
-<!-- FOOTER -->
-<footer class="mt-5 py-4 bg-dark text-light">
-    <div class="container">
-
-        <!-- All columns by Center -->
-        <div class="row justify-content-center text-center">
-
-            <!-- Left column -->
-            <div class="col-md-4 mb-3">
-                <h5 class="fw-bold">Group G</h5>
-                <p class="small">Sustainability Project — National College of Ireland</p>
-            </div>
-
-            <!-- Center column -->
-            <div class="col-md-3 mb-3">
-                <h5 class="fw-bold">Navigation</h5>
-                <ul class="list-unstyled">
-                    <li><a href="index.html" class="text-light text-decoration-none">Home</a></li>
-                    <li><a href="news.html" class="text-light text-decoration-none">News</a></li>
-                    <li><a href="info.html" class="text-light text-decoration-none">Info</a></li>
-                    <li><a href="contact.html" class="text-light text-decoration-none">Contact Us</a></li>
-                </ul>
-            </div>
-
-            <!-- Right column -->
-            <div class="col-md-3 mb-3">
-                <h5 class="fw-bold">Contact</h5>
-                <p class="small mb-1">Email: groupg@nci.ie</p>
-                <p class="small mb-1">Phone: +353 123 4567</p>
-                <p class="small">Dublin, Ireland</p>
-            </div>
-
-        </div>
-
-        <hr class="border-light">
-
-        <p class="text-center small mb-0">
-            © 2025 Group G — All Rights Reserved
-        </p>
-
-    </div>
-</footer>
 
 		<!-- bootstrap -->
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+		<!-- footer will be inserted here from javascript -->
+		<script src="scripts/footer.js"></script>
 	</body>
 </html>

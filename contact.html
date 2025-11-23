@@ -1,87 +1,94 @@
-<!-- info.html page // by Alexander Kirichenko -->
+<!-- contact.html || by Alexander Kirichenko -->
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<!-- google fonts -->
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bartle&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">	
+<head>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bartle&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
 
-		<!-- bootstrap -->
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">	
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Bootstrap -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
-		<title>Sustainability</title>
-		<link rel="stylesheet" href="css/style.css">
-	</head>
-	<body>
-		<!-- navbar -->
-		<!-- We must change "navbar" to "myNavbar" and delete "bg-dark" if we want to use our color instead standart boostrap -->
-		<nav class="navbar fixe-top navbar-expand-lg myNavbar" data-bs-theme="dark"> 
-			<div class="container-fluid">
-				<a class="navbar-brand"  href="index.html">Group G</a>
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style/css/style.css">
+</head>
 
-				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-					<a class="nav-link active navBtn" aria-current="page" href="index.html">Home</a>
-					<a class="nav-link navBtn"  href="news.html">News</a>
-					<a class="nav-link navBtn"  href="uisceire.html">UisceIRE</a>
-					<a class="nav-link navBtn"  href="sources.html">Sources</a>
-					<a class="nav-link navBtn"  href="conserv.html">Conservation</a>
-					<a class="nav-link navBtn"  href="findus.html">Find Us</a>
-					<a class="nav-link navBtn"  href="contact.html">Contact Us</a>
-					<a class="nav-link navBtn"  href="info.html">Info</a>
-				</div>
-			</div>
-		</nav>
-		
-<!-- FOOTER -->
-<footer class="mt-5 py-4 bg-dark text-light">
-    <div class="container">
+<body>
 
-        <!-- All columns by Center -->
-        <div class="row justify-content-center text-center">
+<!-- NAVBAR -->
+<script src="scripts/nav.js"></script>
 
-            <!-- Left column -->
-            <div class="col-md-4 mb-3">
-                <h5 class="fw-bold">Group G</h5>
-                <p class="small">Sustainability Project — National College of Ireland</p>
+<!-- PAGE CONTENT -->
+<div class="container mt-5 pt-4">
+
+    <h2 class="text-center mb-3 font-bartle">Contact Form</h2>
+    <p class="text-center mb-5">Feel free to send us your message</p>
+
+    <div class="row">
+
+        <!-- LEFT COLUMN with icons -->
+        <div class="col-md-3 mb-5">
+            <div class="d-flex align-items-center mb-4">
+                <div class="placeholder-square me-3"></div>
+                <span class="fw-bold">Email</span>
             </div>
 
-            <!-- Center column -->
-            <div class="col-md-3 mb-3">
-                <h5 class="fw-bold">Navigation</h5>
-                <ul class="list-unstyled">
-                    <li><a href="index.html" class="text-light text-decoration-none">Home</a></li>
-                    <li><a href="news.html" class="text-light text-decoration-none">News</a></li>
-                    <li><a href="info.html" class="text-light text-decoration-none">Info</a></li>
-                    <li><a href="contact.html" class="text-light text-decoration-none">Contact Us</a></li>
-                </ul>
+            <div class="d-flex align-items-center mb-4">
+                <div class="placeholder-square me-3"></div>
+                <span class="fw-bold">Phone</span>
             </div>
 
-            <!-- Right column -->
-            <div class="col-md-3 mb-3">
-                <h5 class="fw-bold">Contact</h5>
-                <p class="small mb-1">Email: groupg@nci.ie</p>
-                <p class="small mb-1">Phone: +353 123 4567</p>
-                <p class="small">Dublin, Ireland</p>
+            <div class="d-flex align-items-center mb-4">
+                <div class="placeholder-square me-3"></div>
+                <span class="fw-bold">Address</span>
             </div>
+        </div>
+
+        <!-- RIGHT COLUMN – CONTACT FORM -->
+        <div class="col-md-9">
+
+            <form class="contact-form p-4 rounded shadow-lg">
+
+                <!-- Big message textarea -->
+                <div class="mb-4">
+                    <label class="form-label fw-bold">Your message</label>
+                    <textarea class="form-control form-control-lg" rows="6"
+                        placeholder="Write your message here..."></textarea>
+                </div>
+
+                <!-- Name -->
+                <div class="mb-4">
+                    <label class="form-label fw-bold">Your name</label>
+                    <input type="text" class="form-control" placeholder="Enter your name">
+                </div>
+
+                <!-- Email -->
+                <div class="mb-4">
+                    <label class="form-label fw-bold">Your email</label>
+                    <input type="email" class="form-control" placeholder="Enter your email">
+                </div>
+
+                <!-- Submit -->
+                <button type="submit" class="btn btn-primary px-5 py-2 fw-bold">
+                    Send →
+                </button>
+
+            </form>
 
         </div>
 
-        <hr class="border-light">
-
-        <p class="text-center small mb-0">
-            © 2025 Group G — All Rights Reserved
-        </p>
-
     </div>
-</footer>
 
-		<!-- bootstrap -->
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-	</body>
+</div>
+
+<!-- Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- FOOTER -->
+<script src="scripts/footer.js"></script>
+
+</body>
 </html>
