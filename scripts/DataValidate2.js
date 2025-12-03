@@ -1,5 +1,5 @@
 /* --- HTML Content String --- */
-var Login = '<div id="loginScreen" class="container-fluid"><label>User Name:</label><input id="username" type="text" onchange="validateData()"/><button id="myBtn" onclick="authenticate()">Login</button></div><div id="mainScreen"><h3 id="message">Please Login</h3><button onclick="logout()">Logout</button></div>';
+var Login = '<div id="loginScreen" class="container-fluid"><label>User Name:</label><input id="username" type="text" onchange="validateData()"/><button id="myBtn" onclick="loginAuth()">Login</button></div><div id="mainScreen"><h3 id="message">Please Login</h3><button onclick="logout()">Logout</button></div>';
   
 //1. Insert HTML content
 document.body.insertAdjacentHTML("afterbegin", Login);
@@ -42,6 +42,20 @@ document.addEventListener("DOMContentLoaded", function(e) {
         targetElementBtn.disabled = true;
     }
 }
+	function loginAuth() {
+    sUserName = targetElementInput.value;   // FIXED
+    localStorage.setItem('username', sUserName);
+
+    if (targetElementMessage) {
+        targetElementMessage.innerHTML = "Hello " + sUserName + ", you are authenticated";
+    }
+    if (targetElementLogin) {
+        targetElementLogin.style.display = "none";
+    }
+    if (targetElementMain) {
+        targetElementMain.style.display = "block";
+    }
+}
  
 // Check if the username is stored in localStorage
 function checkLoginStatus() {
@@ -57,44 +71,6 @@ function checkLoginStatus() {
       targetElementLogin.style.display = "block";
       targetElementMain.style.display = "none";
   }
-}
-
-
-
-
-function authenticate(){
-    
-    const currentUserName = targetElementInput.value; 
-	if (currentUserName.length <= 2) {
-		   alert("Please enter a username longer than 2 characters.");
-			return; 
-		}
-  
-	  // 1. Get the latest value directly from the input element
-     // 2. Validate the value (Safety check)
-    // 3. Update the global variable
-   // 4. Save the username to localStorage
-  // 5. Perform UI update on the message element
- // 6. Hide the login screen, but ONLY if the element exists
-// 7. Show the main screen, but ONLY if the element exists
-  
-    sUserName = currentUserName;
-    localStorage.setItem('username', sUserName); 
-
-      
-    if (targetElementMessage) {
-        targetElementMessage.innerHTML = "Hello " + sUserName + ", you are authenticated";
-    }
-
-    
-    if (targetElementLogin) {
-        targetElementLogin.style.display = "none";
-    }
-    
-    
-    if (targetElementMain) {
-        targetElementMain.style.display = "block";
-    }
 }
 
 function logout(){
