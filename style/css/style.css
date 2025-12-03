@@ -14,13 +14,6 @@
   font-style: normal;
 }
 
-.font-jb {
-  font-family: "JetBrains Mono", monospace;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
-}
-
 /* fonts end */
 
 /* .row {
@@ -42,7 +35,7 @@
 
 .navBtn {
   /* background-color: #333; */
-  color:  #040968;
+  color:  #cbd8d9;
   margin: 0;
   padding: 0;
   /* padding: 14px 16px; */
@@ -93,6 +86,7 @@ body {
 
 
 /* Andrei G section start ################################# */
+
 /* andrei navbar customization start*/
 .ag_body .navbar-brand {
   color: #A6F5C2;
@@ -104,7 +98,7 @@ body {
 
 .ag_body nav {
   /* background-color:#4b4a4a; */
-  background-color: #1e1e1e;
+  background-color:#1e1e1e;
 }
 
 .ag_active {
@@ -119,8 +113,8 @@ body {
 
 .collapse .navBtn:hover {
   /* background-color: #A6F5C2; */
-  background-color: white;
-  color: black;
+  background-color: #060606;
+  /* color: black; */
 }
 
 .collapse .ag_loginBtn {
@@ -147,7 +141,8 @@ body {
 
 .ag_body img {
   /* height: auto; */
-  width: 80%;
+  width: 100%;
+  object-fit: fill;
 }
 
 .ag_col:hover {
@@ -216,6 +211,7 @@ body {
 }
 /* input style end */
 /* Andrei G section end ################################# */
+
 
 
 /* ===ALEXANDER K section start=== */
@@ -419,12 +415,21 @@ body {
 	padding: 10px; 
 	height: 70%;
 }
+
+.news-image{
+	border-radius: 10px; 
+	padding: 10px; 
+	height: 100%;
+}
 	
 
 body.consv{
 	background-image: url("../images/vividblue.jpg");
 }
 
+body.findus{
+	background-image: url("../images/tbofindusbackground.jpg");
+}
 .centered {
   max-width: fit-content;
   margin-left: auto;
@@ -435,6 +440,10 @@ body.consv{
   font-family: "BBH Sans Bartle", sans-serif;
   font-weight: 400;
   font-style: normal;
+}
+
+.white-text{
+	color:white;
 }
 
 #imgtri{
