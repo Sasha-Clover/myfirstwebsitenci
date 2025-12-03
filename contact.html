@@ -109,30 +109,15 @@ function reset_contact_error() {
 
 function submitForm() {
 
-    // my values
-    const msg = document.getElementById("c_message").value.trim();
     const name = document.getElementById("c_name").value.trim();
-    const email = document.getElementById("c_email").value.trim();
 
     const c_error = document.getElementById("c_error");
 
-   
     reset_contact_error();
 
     let form_validity = true;
 
-    
-    if (msg == "" || msg.length < 3) {
-        c_error.textContent = "Please fill the form correctly!";
-        form_validity = false;
-    }
-
     if (name == "" || name.length < 2) {
-        c_error.textContent = "Please fill the form correctly!";
-        form_validity = false;
-    }
-
-    if (!email.includes("@") || !email.includes(".")) {
         c_error.textContent = "Please fill the form correctly!";
         form_validity = false;
     }
@@ -151,4 +136,5 @@ function submitForm() {
 
 </body>
 </html>
+
 
